@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NikhilMotion — 90s Hindi Songs Web Radio</title>
+
+  <meta
+    name="description"
+    content="NikhilMotion is a free web radio playing 90s Hindi film songs around the clock, inspired by the nostalgia of an old Indian barber shop."
+  >
+
+  <meta
+    name="keywords"
+    content="90s Hindi songs, old Hindi songs, 90s Bollywood songs, retro Hindi music, random Hindi songs, purane gaane, 90s ke gaane, NikhilMotion"
+  >
+
+  <meta name="author" content="NikhilMotion">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://nikhilmotion.nikhil.info/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="NikhilMotion — 90s Hindi Songs">
+  <meta
+    property="og:description"
+    content="A free web radio playing 90s Hindi film songs around the clock."
+  >
+  <meta property="og:url" content="https://nikhilmotion.nikhil.info/">
+  <meta property="og:site_name" content="NikhilMotion">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="NikhilMotion — 90s Hindi Songs">
+  <meta
+    name="twitter:description"
+    content="90s Hindi film songs playing around the clock."
+  >
+
+  <!-- Main structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://nikhilmotion.nikhil.info/#website",
+    "name": "NikhilMotion",
+    "alternateName": [
+      "निखिल मोशन",
+      "Nikhil Motion"
+    ],
+    "url": "https://nikhilmotion.nikhil.info/",
+    "description": "NikhilMotion is a free web radio that plays 90s Hindi film songs around the clock, over an illustrated Indian street-corner barber shop.",
+    "inLanguage": [
+      "en-IN",
+      "hi-IN"
+    ],
+    "keywords": [
+      "90s Hindi songs",
+      "90s Bollywood songs",
+      "old Hindi songs online",
+      "retro Bollywood music",
+      "90s ke gaane",
+      "purane gaane",
+      "90s nostalgia India"
+    ]
+  }
+  </script>
+
+  <!-- Web radio identity -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "NikhilMotion",
+    "alternateName": "निखिल मोशन",
+    "url": "https://nikhilmotion.nikhil.info/",
+    "applicationCategory": "MultimediaApplication",
+    "operatingSystem": "Web Browser",
+    "description": "A free browser-based web radio playing 90s Hindi film songs around the clock.",
+    "isAccessibleForFree": true,
+    "inLanguage": [
+      "en-IN",
+      "hi-IN"
+    ]
+  }
+  </script>
+
+  <!-- FAQ structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is NikhilMotion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NikhilMotion is a free web radio that plays 90s Hindi film songs around the clock, set against an illustrated Indian street-corner barber shop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is NikhilMotion free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. NikhilMotion is free to use and requires no sign-up, subscription, payment or app installation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does NikhilMotion work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Press play in the player at the bottom of the screen. Songs play through an embedded YouTube player and the next song begins when the current track ends."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What songs does NikhilMotion play?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NikhilMotion plays Hindi film playback songs from the late 1980s and 1990s, including songs associated with singers such as Kumar Sanu, Alka Yagnik, Udit Narayan and Sonu Nigam."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does NikhilMotion play random songs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The song rotation is shuffled when the page loads, creating a different listening order on each visit."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does NikhilMotion work on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. NikhilMotion is designed to work on phones, tablets and desktop browsers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is NikhilMotion a music streaming service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "NikhilMotion is closer to an always-on web radio than a conventional music streaming service. It focuses on a continuous rotation of 90s Hindi film songs."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5efe4;
+      color: #211b17;
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 28px 20px;
+      background: #17120f;
+      color: #fff;
+      text-align: center;
+    }
+
+    .brand-hi {
+      font-size: 15px;
+      opacity: 0.75;
+      margin-bottom: 4px;
+    }
+
+    .brand {
+      margin: 0;
+      font-size: clamp(36px, 8vw, 76px);
+      letter-spacing: 5px;
+      font-weight: 900;
+    }
+
+    .tagline {
+      margin: 12px auto 0;
+      max-width: 650px;
+      color: #e6d8c4;
+      font-size: 17px;
+    }
+
+    main {
+      width: min(1000px, 92%);
+      margin: 0 auto;
+    }
+
+    .hero {
+      min-height: 65vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    .hero-inner {
+      max-width: 760px;
+    }
+
+    .hero h2 {
+      font-size: clamp(30px, 6vw, 58px);
+      line-height: 1.05;
+      margin: 0 0 22px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #62564b;
+    }
+
+    .play-button {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: #211b17;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 55px 0;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+
+    .about {
+      max-width: 750px;
+      font-size: 18px;
+    }
+
+    .faq {
+      border-top: 1px solid #cfc2b3;
+    }
+
+    details {
+      padding: 18px 0;
+      border-bottom: 1px solid #cfc2b3;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    footer {
+      padding: 45px 20px 100px;
+      background: #17120f;
+      color: #d9cdbf;
+      text-align: center;
+    }
+
+    footer a {
+      color: #fff;
+    }
+
+    .rights {
+      max-width: 700px;
+      margin: 20px auto;
+      font-size: 14px;
+    }
+
+    .copyright {
+      font-size: 13px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="brand-hi">निखिल मोशन</div>
+    <h1 class="brand">NIKHILMOTION</h1>
+
+    <p class="tagline">
+      90s Hindi film songs playing round the clock —
+      like the tape that never stops at a neighbourhood barber shop.
+    </p>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-inner">
+
+        <h2>
+          The tape never stops.
+        </h2>
+
+        <p>
+          Welcome to NikhilMotion — a free web radio for
+          90s Hindi film music and Bollywood nostalgia.
+        </p>
+
+        <p>
+          Press play and let the rotation take over.
+        </p>
+
+        <!-- Connect this button to your actual player -->
+        <a href="#player" class="play-button">
+          ▶ Play NikhilMotion
+        </a>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About NikhilMotion</h2>
+
+      <div class="about">
+        <p>
+          NikhilMotion is a free web radio that plays 90s Hindi
+          film songs around the clock, inspired by the illustrated
+          Indian street-corner barber shop.
+        </p>
+
+        <p>
+          The idea is simple: no catalogue to browse, no playlists
+          to build and no complicated setup. Open the page, press
+          play and let the songs keep going.
+        </p>
+
+        <p>
+          The rotation includes Hindi playback classics from the
+          late 1980s and 1990s, with singers such as Kumar Sanu,
+          Alka Yagnik, Udit Narayan, Sonu Nigam and others.
+        </p>
+      </div>
+    </section>
+
+    <section id="player">
+      <h2>Listen</h2>
+
+      <p>
+        Audio is played through an embedded YouTube player.
+        Nothing is hosted directly on this website.
+      </p>
+
+      <!--
+        YOUR EXISTING YOUTUBE PLAYER GOES HERE.
+
+        Example:
+
+        <iframe
+          width="100%"
+          height="315"
+          src="YOUR-YOUTUBE-EMBED-URL"
+          title="NikhilMotion Player"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen>
+        </iframe>
+      -->
+
+    </section>
+
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq">
+
+        <details>
+          <summary>What is NikhilMotion?</summary>
+          <p>
+            NikhilMotion is a free web radio that plays 90s Hindi
+            film songs around the clock, set against an illustrated
+            Indian street-corner barber shop.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is NikhilMotion free?</summary>
+          <p>
+            Yes. NikhilMotion is free to use and requires no
+            sign-up, subscription, payment or app installation.
+          </p>
+        </details>
+
+        <details>
+          <summary>How does NikhilMotion work?</summary>
+          <p>
+            Press play in the player. Songs are played through
+            an embedded YouTube player and the next song begins
+            when the current track ends.
+          </p>
+        </details>
+
+        <details>
+          <summary>What songs does NikhilMotion play?</summary>
+          <p>
+            Hindi film playback songs from the late 1980s and
+            1990s, including music associated with singers such
+            as Kumar Sanu, Alka Yagnik, Udit Narayan and Sonu Nigam.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does NikhilMotion play random songs?</summary>
+          <p>
+            Yes. The rotation is shuffled when the page loads,
+            giving each visit a different listening order.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does NikhilMotion work on mobile?</summary>
+          <p>
+            Yes. The website is designed for phones, tablets
+            and desktop browsers.
+          </p>
+        </details>
+
+        <details>
+          <summary>Is NikhilMotion a music streaming service?</summary>
+          <p>
+            Not in the conventional sense. It is closer to an
+            always-on web radio focused on 90s Hindi film songs.
+          </p>
+        </details>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+
+    <h2>निखिल मोशन · NIKHILMOTION</h2>
+
+    <div class="rights">
+      <p>
+        Audio plays through YouTube's embedded player.
+        Nothing is hosted on this site, and all rights remain
+        with the respective labels, composers and performers.
+      </p>
+
+      <p>
+        Song credits are compiled from film soundtrack listings.
+      </p>
+
+      <p>
+        If you hold rights to anything here and want it taken down,
+        email:
+        <a href="mailto:aashu.ships@gmail.com">
+          aashu.ships@gmail.com
+        </a>
+      </p>
+    </div>
+
+    <div class="copyright">
+      © 2026 nikhilmotion.nikhil.info
+    </div>
+
+  </footer>
+
+</body>
+</html>
